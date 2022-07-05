@@ -47,7 +47,7 @@ class _HomepageState extends State<Homepage> {
                 itemCount: allData.length,
                 itemBuilder: (context, index) => ListTile(
                   title: Text(allData[index].brand_name),
-                  subtitle: Text("Jumlah Device : ${allData[index].device_count}"),
+                  subtitle: Text("Jumlah Seri Model : ${allData[index].device_count}"),
                 ),
               );
             }

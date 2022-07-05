@@ -20,7 +20,7 @@ class Phone {
   String detail;
 
   factory Phone.fromJson(Map<String, dynamic> json) => Phone(
-    brand_id: json["id"],
+    brand_id: json["brand_id"],
     brand_name: json["brand_name"],
     brand_slug: json["brand_slug"],
     device_count: json["device_count"],
