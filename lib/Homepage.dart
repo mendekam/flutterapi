@@ -1,17 +1,17 @@
 import 'dart:convert';
-
 import 'package:flutterapi/model/Model.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 
-class Homepage extends StatefulWidget {
-  const Homepage({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  static String tag = 'home-page';
+  HomePage({Key? key}) : super(key: key);
 
   @override
-  State<Homepage> createState() => _HomepageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _HomepageState extends State<Homepage> {
+class _HomePageState extends State<HomePage>{
   List<Phone> allData = [];
   _getPhoneData() async {
     try {
